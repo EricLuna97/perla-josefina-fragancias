@@ -1,0 +1,26 @@
+name: Supabase Keep Alive
+
+on:
+  schedule:
+    # Se ejecuta los lunes y jueves a las 12:00 UTC (9:00 AM hora de Argentina)
+    - cron: '0 12 * * 1,4'
+  workflow_dispatch: # Permite probarlo manualmente con un clic desde GitHub
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase REST API
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" -X GET "${{ secrets.VITE_SUPABASE_URL }}/rest/v1/categories?select=id&limit=1" \
+            -H "apikey: ${{ secrets.VITE_SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.VITE_SUPABASE_ANON_KEY }}")
+          
+          echo "Supabase HTTP status response: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 206 ]; then
+            echo "Ping exitoso. La base de datos sigue activa."
+          else
+            echo "Alerta: Codigo recibido $response"
+            exit 1
+          fi
