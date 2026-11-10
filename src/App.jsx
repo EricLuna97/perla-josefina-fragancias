@@ -126,7 +126,7 @@ export default function App() {
   });
 
   return (
-    <div className="min-h-screen bg-[#FBFBF9] text-stone-800 font-sans selection:bg-emerald-100 selection:text-emerald-900 flex flex-col">
+    <div className="min-h-screen bg-[#FBFBF9] text-stone-800 font-sans selection:bg-rose-100 selection:text-rose-900 flex flex-col">
       {/* BARRA SUPERIOR ELEGANTE */}
       <header className="sticky top-0 z-30 bg-[#FBFBF9]/90 backdrop-blur-md border-b border-stone-200/70">
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between gap-2">
@@ -162,13 +162,13 @@ export default function App() {
         <div className="space-y-4 mb-8">
           {/* Buscador */}
           <div className="max-w-md mx-auto relative">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-rose-400/80" />
             <input
               type="text"
               placeholder="Buscar producto o propiedad terapéutica..."
               value={searchTerm}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-white border border-stone-200/90 rounded-full text-xs sm:text-sm placeholder-stone-400 text-stone-800 shadow-xs focus:outline-hidden focus:ring-1 focus:ring-emerald-800 focus:border-emerald-800 transition-all"
+              className="w-full pl-10 pr-4 py-2.5 bg-white border border-rose-200/80 rounded-full text-xs sm:text-sm placeholder-stone-400 text-stone-800 shadow-xs focus:outline-hidden focus:ring-1 focus:ring-rose-400 focus:border-rose-400 transition-all"
             />
           </div>
 
@@ -178,8 +178,8 @@ export default function App() {
               onClick={() => handleCategoryChange('Todos')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                 activeCategory === 'Todos'
-                  ? 'bg-stone-800 text-stone-50 shadow-xs'
-                  : 'bg-stone-200/60 text-stone-600 hover:bg-stone-200 hover:text-stone-900'
+                  ? 'bg-rose-400 hover:bg-rose-500 text-white shadow-xs border border-rose-400'
+                  : 'bg-rose-50 text-stone-700 border border-rose-200 hover:bg-rose-500 hover:text-white hover:border-rose-500'
               }`}
             >
               Todos los preparados
@@ -191,8 +191,8 @@ export default function App() {
                 onClick={() => handleCategoryChange(cat.name)}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                   activeCategory === cat.name
-                    ? 'bg-stone-800 text-stone-50 shadow-xs'
-                    : 'bg-stone-200/60 text-stone-600 hover:bg-stone-200 hover:text-stone-900'
+                    ? 'bg-rose-400 hover:bg-rose-500 text-white shadow-xs border border-rose-400'
+                    : 'bg-rose-50 text-stone-700 border border-rose-200 hover:bg-rose-500 hover:text-white hover:border-rose-500'
                 }`}
               >
                 {cat.name}
@@ -204,7 +204,7 @@ export default function App() {
         {/* ESTADO DE CARGA */}
         {loading && (
           <div className="flex flex-col items-center justify-center py-24 text-stone-400 gap-3">
-            <Loader2 className="w-6 h-6 animate-spin text-emerald-800" />
+            <Loader2 className="w-6 h-6 animate-spin text-rose-400" />
             <span className="text-xs text-stone-500">Cargando catálogo natural...</span>
           </div>
         )}
@@ -225,7 +225,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={handleRetry}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-stone-900 hover:bg-stone-800 text-stone-50 text-xs font-medium transition-all shadow-xs cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-rose-400 hover:bg-rose-500 text-stone-50 text-xs font-medium transition-all shadow-xs cursor-pointer"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Reintentar conexión</span>
@@ -259,10 +259,10 @@ export default function App() {
                 tabIndex={0}
                 role="button"
                 aria-label={`Ver detalles de ${prod.name}`}
-                className="bg-white rounded-2xl border border-stone-200/70 overflow-hidden shadow-xs flex flex-col justify-between hover:shadow-md hover:border-stone-300 transition-all group cursor-pointer text-left focus:outline-hidden focus:ring-2 focus:ring-emerald-700/50"
+                className="bg-white rounded-2xl border border-rose-200/70 overflow-hidden shadow-xs flex flex-col justify-between hover:shadow-md hover:shadow-rose-100/70 hover:border-rose-400 transition-all group cursor-pointer text-left focus:outline-hidden focus:ring-2 focus:ring-rose-400/60"
               >
                 {/* Imagen del Producto */}
-                <div className="aspect-square w-full bg-stone-100 relative overflow-hidden">
+                <div className="aspect-square w-full bg-rose-50/50 relative overflow-hidden">
                   {prod.image_url ? (
                     <img
                       src={prod.image_url}
@@ -271,13 +271,13 @@ export default function App() {
                       loading="lazy"
                     />
                   ) : (
-                    <div className="w-full h-full flex flex-col items-center justify-center text-stone-300 gap-1.5 p-4 text-center group-hover:bg-stone-100/70 transition-colors">
-                      <span className="text-2xl opacity-40 group-hover:scale-110 transition-transform">🪷</span>
-                      <span className="text-[11px] font-medium text-stone-400">Preparado artesanal</span>
+                    <div className="w-full h-full flex flex-col items-center justify-center text-rose-300 gap-1.5 p-4 text-center group-hover:bg-rose-50 transition-colors">
+                      <span className="text-2xl opacity-55 group-hover:scale-110 transition-transform">🪷</span>
+                      <span className="text-[11px] font-medium text-rose-400/80">Preparado artesanal</span>
                     </div>
                   )}
 
-                  <span className="absolute top-2 left-2 bg-white/95 backdrop-blur-xs text-stone-700 text-[10px] font-medium px-2 py-0.5 rounded-full border border-stone-200/60 shadow-xs">
+                  <span className="absolute top-2 left-2 bg-white/95 backdrop-blur-xs text-rose-700 text-[10px] font-medium px-2 py-0.5 rounded-full border border-rose-200/80 shadow-xs">
                     {prod.categories?.name || 'Fitopreparado'}
                   </span>
                 </div>
@@ -300,7 +300,7 @@ export default function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="mt-4 w-full bg-stone-900 hover:bg-emerald-900 text-stone-50 font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-xs"
+                    className="mt-4 w-full bg-rose-400 hover:bg-rose-500 text-white font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-xs"
                   >
                     <MessageCircle className="w-3.5 h-3.5 shrink-0" />
                     <span>Consultar</span>

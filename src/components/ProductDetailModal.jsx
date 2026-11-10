@@ -40,7 +40,7 @@ export default function ProductDetailModal({ product, onClose, whatsappNumber })
           onClose();
         }
       }}
-      className="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-rose-400 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
     >
       <div className="relative w-full max-w-lg bg-[#FBFBF9] rounded-3xl border border-stone-200/90 shadow-2xl overflow-hidden my-auto flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
         
