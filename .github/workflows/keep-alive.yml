@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Ping PostgreSQL Engine
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         run: |
           curl -f -X POST "$SUPABASE_URL/rest/v1/rpc/keep_alive" \
             -H "apikey: $SUPABASE_ANON_KEY" \
