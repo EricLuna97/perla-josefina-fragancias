@@ -2,7 +2,7 @@ export default function Hero() {
   const whatsappUrl = "https://wa.me/5492944793890?text=Hola%20Josefina,%20estuve%20viendo%20el%20catálogo%20y%20quería%20hacerte%20una%20consulta.";
 
   return (
-    <section className="bg-[#FBFBF9] border-b border-stone-200 py-16 sm:py-24">
+    <section className="bg-[#FBFBF9] border-b border-stone-200 py-12 sm:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         {/* Detalle icono de loto decorativo */}
 <div className="flex items-center justify-center gap-3 mb-4">
