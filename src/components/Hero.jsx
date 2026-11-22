@@ -1,17 +1,20 @@
 export default function Hero() {
-  const whatsappUrl = "https://wa.me/5492944793890?text=Hola%20Josefina,%20estuve%20viendo%20el%20catálogo%20y%20quería%20hacerte%20una%20consulta.";
+  const whatsappUrl =
+    "https://wa.me/5492944793890?text=Hola%20Josefina,%20estuve%20viendo%20el%20catálogo%20y%20quería%20hacerte%20una%20consulta.";
 
   return (
     <section className="bg-[#FBFBF9] border-b border-stone-200 py-12 sm:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        {/* Detalle icono de loto decorativo */}
-<div className="flex items-center justify-center gap-3 mb-4">
-  <span className="h-px w-12 bg-rose-400"></span>
-  <span className="text-4xl leading-none select-none">🪷</span>
-  <span className="h-px w-12 bg-rose-400"></span>
-</div>
+        {/* Nuevo logo centrado y grande */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/LogoJosefina.png"
+            alt="Josefina Fragancias Naturales"
+            className="w-56 h-56 sm:w-56 sm:h-56 object-contain select-none"
+          />
+        </div>
 
-        <span className="text-xs font-semibold tracking-widest text-rose-400 uppercase">
+        <span className="text-xs font-semibold tracking-widest text-rose-500 uppercase">
           Comarca Andina · Patagonia Argentina
         </span>
 
@@ -26,7 +29,7 @@ export default function Hero() {
         {/* Badges de confianza */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs text-stone-700">
           <span className="px-3 py-1 rounded-full bg-rose-50 border border-rose-200">
-            🌿 100% Artesanal y Natural
+            ✨ 100% Artesanal y Natural
           </span>
           <span className="px-3 py-1 rounded-full bg-rose-50 border border-rose-200">
             📦 Envíos a todo el país
@@ -42,7 +45,7 @@ export default function Hero() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-rose-400 hover:bg-rose-500 text-white font-medium text-sm transition-all shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-medium text-sm transition-all shadow-sm hover:shadow-md"
           >
             <span>💬</span>
             <span>Consultas y Pedidos por WhatsApp</span>

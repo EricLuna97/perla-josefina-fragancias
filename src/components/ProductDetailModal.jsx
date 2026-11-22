@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { X, MessageCircle, Sparkles, Leaf } from 'lucide-react';
+import { X, MessageCircle, Sparkles, Flower2 } from 'lucide-react';
 
 export default function ProductDetailModal({ product, onClose, whatsappNumber }) {
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function ProductDetailModal({ product, onClose, whatsappNumber })
           onClose();
         }
       }}
-      className="fixed inset-0 z-50 bg-rose-400 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-[#320c22]/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
     >
       <div className="relative w-full max-w-lg bg-[#FBFBF9] rounded-3xl border border-stone-200/90 shadow-2xl overflow-hidden my-auto flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
         
@@ -79,16 +79,16 @@ export default function ProductDetailModal({ product, onClose, whatsappNumber })
           {/* Cuerpo de la información */}
           <div className="p-5 sm:p-7 space-y-4">
             
-            {/* Badges de Categoría y Disponibilidad */}
+            {/* Badges de Categoría y Disponibilidad (sin verdes) */}
             <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1 text-[11px] font-medium px-2.5 py-1 rounded-full bg-stone-200/70 text-stone-700 border border-stone-300/50">
-                <Leaf className="w-3 h-3 text-emerald-800" />
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200">
+                <Flower2 className="w-3.5 h-3.5 text-rose-500" />
                 {categoryName}
               </span>
 
               {product.is_available !== false ? (
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200">
+                  <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
                   Disponible
                 </span>
               ) : (
@@ -130,7 +130,7 @@ export default function ProductDetailModal({ product, onClose, whatsappNumber })
 
             {/* Nota de confianza artesanal */}
             <div className="p-3 bg-stone-50 rounded-2xl border border-stone-200/60 flex items-start gap-2.5 text-xs text-stone-600">
-              <Sparkles className="w-4 h-4 text-rose-400 shrink-0 mt-0.5" />
+              <Sparkles className="w-4 h-4 text-rose-500 shrink-0 mt-0.5" />
               <p className="leading-relaxed">
                 Cada formulación se elabora en pequeñas tandas respetando los ciclos naturales. Hacemos envíos directos a todo el país.
               </p>
@@ -144,7 +144,7 @@ export default function ProductDetailModal({ product, onClose, whatsappNumber })
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-rose-400 hover:bg-rose-500 text-white font-medium text-xs sm:text-sm shadow-sm hover:shadow-md transition-all"
+            className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-rose-500 hover:bg-rose-600 text-white font-medium text-xs sm:text-sm shadow-sm hover:shadow-md transition-all"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Consultar por este preparado</span>

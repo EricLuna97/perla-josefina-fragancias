@@ -131,7 +131,7 @@ export default function App() {
       <header className="sticky top-0 z-30 bg-[#FBFBF9]/90 backdrop-blur-md border-b border-stone-200/70">
         <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between gap-2">
           <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
-            <span className="text-rose-400 text-sm shrink-0">🪷</span>
+            <span className="text-rose-500 text-sm shrink-0">🪷</span>
             <span className="font-serif font-medium text-xs sm:text-base tracking-wide text-stone-900 truncate">
               {STORE_CONFIG.name}
             </span>
@@ -141,7 +141,7 @@ export default function App() {
             href={generalWhatsAppUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs font-medium text-rose-400 hover:text-rose-500 flex items-center gap-1 transition-colors shrink-0"
+            className="text-xs font-medium text-rose-500 hover:text-rose-600 flex items-center gap-1 transition-colors shrink-0"
           >
             <span className="hidden sm:inline">Consultar pedidos</span>
             <span className="sm:hidden">Consultas</span>
@@ -162,13 +162,13 @@ export default function App() {
         <div className="space-y-4 mb-8">
           {/* Buscador */}
           <div className="max-w-md mx-auto relative">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-rose-400/80" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-rose-500/80" />
             <input
               type="text"
               placeholder="Buscar producto o propiedad terapéutica..."
               value={searchTerm}
               onChange={(e) => handleSearchChange(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-white border border-rose-200/80 rounded-full text-xs sm:text-sm placeholder-stone-400 text-stone-800 shadow-xs focus:outline-hidden focus:ring-1 focus:ring-rose-400 focus:border-rose-400 transition-all"
+              className="w-full pl-10 pr-4 py-2.5 bg-white border border-rose-200/80 rounded-full text-xs sm:text-sm placeholder-stone-400 text-stone-800 shadow-xs focus:outline-hidden focus:ring-1 focus:ring-rose-500 focus:border-rose-500 transition-all"
             />
           </div>
 
@@ -178,7 +178,7 @@ export default function App() {
               onClick={() => handleCategoryChange('Todos')}
               className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                 activeCategory === 'Todos'
-                  ? 'bg-rose-400 hover:bg-rose-500 text-white shadow-xs border border-rose-400'
+                  ? 'bg-rose-500 hover:bg-rose-600 text-white shadow-xs border border-rose-500'
                   : 'bg-rose-50 text-stone-700 border border-rose-200 hover:bg-rose-500 hover:text-white hover:border-rose-500'
               }`}
             >
@@ -191,7 +191,7 @@ export default function App() {
                 onClick={() => handleCategoryChange(cat.name)}
                 className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
                   activeCategory === cat.name
-                    ? 'bg-rose-400 hover:bg-rose-500 text-white shadow-xs border border-rose-400'
+                    ? 'bg-rose-500 hover:bg-rose-600 text-white shadow-xs border border-rose-500'
                     : 'bg-rose-50 text-stone-700 border border-rose-200 hover:bg-rose-500 hover:text-white hover:border-rose-500'
                 }`}
               >
@@ -204,7 +204,7 @@ export default function App() {
         {/* ESTADO DE CARGA */}
         {loading && (
           <div className="flex flex-col items-center justify-center py-24 text-stone-400 gap-3">
-            <Loader2 className="w-6 h-6 animate-spin text-rose-400" />
+            <Loader2 className="w-6 h-6 animate-spin text-rose-500" />
             <span className="text-xs text-stone-500">Cargando catálogo natural...</span>
           </div>
         )}
@@ -225,7 +225,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={handleRetry}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-rose-400 hover:bg-rose-500 text-stone-50 text-xs font-medium transition-all shadow-xs cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-rose-500 hover:bg-rose-600 text-white text-xs font-medium transition-all shadow-xs cursor-pointer"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
                 <span>Reintentar conexión</span>
@@ -234,7 +234,7 @@ export default function App() {
                 href={generalWhatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-rose-400 hover:bg-rose-500 text-stone-50 text-xs font-medium transition-all shadow-xs"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-rose-500 hover:bg-rose-600 text-white text-xs font-medium transition-all shadow-xs"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>Consultar por WhatsApp</span>
@@ -259,7 +259,7 @@ export default function App() {
                 tabIndex={0}
                 role="button"
                 aria-label={`Ver detalles de ${prod.name}`}
-                className="bg-white rounded-2xl border border-rose-200/70 overflow-hidden shadow-xs flex flex-col justify-between hover:shadow-md hover:shadow-rose-100/70 hover:border-rose-400 transition-all group cursor-pointer text-left focus:outline-hidden focus:ring-2 focus:ring-rose-400/60"
+                className="bg-white rounded-2xl border border-rose-200/70 overflow-hidden shadow-xs flex flex-col justify-between hover:shadow-md hover:shadow-rose-100/70 hover:border-rose-400 transition-all group cursor-pointer text-left focus:outline-hidden focus:ring-2 focus:ring-rose-500/60"
               >
                 {/* Imagen del Producto */}
                 <div className="aspect-square w-full bg-rose-50/50 relative overflow-hidden">
@@ -273,7 +273,7 @@ export default function App() {
                   ) : (
                     <div className="w-full h-full flex flex-col items-center justify-center text-rose-300 gap-1.5 p-4 text-center group-hover:bg-rose-50 transition-colors">
                       <span className="text-2xl opacity-55 group-hover:scale-110 transition-transform">🪷</span>
-                      <span className="text-[11px] font-medium text-rose-400/80">Preparado artesanal</span>
+                      <span className="text-[11px] font-medium text-rose-500/80">Preparado artesanal</span>
                     </div>
                   )}
 
@@ -300,7 +300,7 @@ export default function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="mt-4 w-full bg-rose-400 hover:bg-rose-500 text-white font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-xs"
+                    className="mt-4 w-full bg-rose-500 hover:bg-rose-600 text-white font-medium text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-xs"
                   >
                     <MessageCircle className="w-3.5 h-3.5 shrink-0" />
                     <span>Consultar</span>
@@ -314,7 +314,7 @@ export default function App() {
         {/* SIN RESULTADOS */}
         {!loading && !error && filteredProducts.length === 0 && (
           <div className="text-center py-20 text-stone-400 text-xs sm:text-sm max-w-sm mx-auto">
-            <span className="text-2xl block mb-2 opacity-50">🍃</span>
+            <span className="text-2xl block mb-2 opacity-50">🪷</span>
             No se encontraron preparados ni variedades con ese criterio.
           </div>
         )}
@@ -384,7 +384,7 @@ export default function App() {
               href={generalWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium bg-rose-400 hover:bg-rose-500 text-stone-50 transition-colors shadow-xs"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-medium bg-rose-500 hover:bg-rose-600 text-white transition-colors shadow-xs"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp</span>
