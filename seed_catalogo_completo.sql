@@ -1,5 +1,5 @@
 -- ==============================================================================
--- CATÁLOGO COMPLETO JOSEFINA FRAGANCIAS NATURALES (104 PRODUCTOS)
+-- CATÁLOGO COMPLETO JOSEFINA FRAGANCIAS NATURALES (94 PRODUCTOS)
 -- ==============================================================================
 -- Ejecutar en Supabase Dashboard > SQL Editor > Run
 -- Mapea directamente a los UUIDs existentes de las categorías en producción.
@@ -8,7 +8,7 @@
 -- 1. Eliminar productos previos para evitar duplicaciones
 DELETE FROM public.products;
 
--- 2. Insertar los 104 productos oficiales desduplicados con sus imágenes de estudio
+-- 2. Insertar los 94 productos oficiales desduplicados con sus imágenes de estudio
 INSERT INTO public.products (category_id, name, description, image_url, is_available)
 VALUES
   ('5238e833-b473-4393-a902-ed3321b9df96', 'Crema de Caléndula', 'Bálsamo calmante y regenerador elaborado con flores de caléndula y cera pura de abejas. Alivia paspaduras, dermatitis, eczemas y pieles sensibles o irritadas.', '/productos/crema-de-calendula.jpg', true),
@@ -70,7 +70,6 @@ VALUES
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre de Pañil', 'Medicina ancestral de los bosques patagónicos. Cicatrizante estomacal para gastritis, úlceras digestivas y desinflamación de mucosas.', '/productos/tintura-madre-de-panil.jpg', true),
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre de Enebro', 'Poderoso diurético natural. Facilita la depuración renal, ayuda a eliminar el exceso de ácido úrico y combate la retención hídrica corporal.', '/productos/tintura-madre-de-enebro.jpg', true),
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre de Cúrcuma', 'Extracto hidroalcohólico concentrado de cúrcuma pura. Hepatoprotectora, antiinflamatoria articular y protectora de la salud cardiovascular.', '/productos/tintura-madre-de-curcuma.jpg', true),
-  ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre Memo MIX', 'Sinergia botánica nootrópica para estudiantes y profesionales. Estimula la concentración sostenida, la lucidez mental y la memoria de retención.', '/productos/tintura-madre-memo-mix.jpg', true),
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre Rescate', 'Gotas de serenidad inmediata ante situaciones de angustia, susto, pánico o nerviosismo agudo. Restablece la paz mental y la estabilidad emocional.', '/productos/tintura-madre-rescate.jpg', true),
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre Melena de León', 'Extracto del poderoso hongo adaptógeno Hericium erinaceus. Fomenta el factor de crecimiento nervioso (NGF), la plasticidad cerebral y la salud digestiva.', '/productos/tintura-madre-melena-de-leon.jpg', true),
   ('5fcfa6d7-4f51-4b3f-921c-6fe48ee094be', 'Tintura Madre de Jarilla', 'Arbusto sagrado de la estepa andina. Potente depurativo orgánico, alivia afecciones respiratorias, reumatismo y purifica el torrente sanguíneo.', '/productos/tintura-madre-de-jarilla.jpg', true),
@@ -99,21 +98,12 @@ VALUES
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Ambiental Sándalo Oriental', 'Madera sagrada aromática de notas cálidas y profundas. Fomenta la concentración, la meditación y el recogimiento espiritual.', '/productos/fragancia-ambiental-sandalo-oriental.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Ambiental Almendra Dulce', 'Aroma cremoso, suave y reconfortante. Brinda sensación de protección y bienestar en espacios familiares.', '/productos/fragancia-ambiental-almendra-dulce.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Ambiental Vainilla Colonial', 'Dulzura gourmand que reconforta y genera una atmósfera sumamente cálida y acogedora en cualquier rincón del hogar.', '/productos/fragancia-ambiental-vainilla-colonial.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil 212', 'Aroma sofisticado de inspiración urbana y cosmopolita. Ideal para vaporizar sobre cortinas, tapizados, ropa de cama y placard.', '/productos/fragancia-textil-212.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil Flower', 'Notas florales empolvadas, suaves y delicadas. Deja una estela fresca y distinguida en telas y prendas de vestir.', '/productos/fragancia-textil-flower.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil Amor', 'Esencia cautivante y romántica para textiles. Ideal para perfumar dormitorios, acolchados y sábanas de manera perdurable.', '/productos/fragancia-textil-amor.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil FRH', 'Sensación de pureza y frescura extrema de ropa recién secada al aire libre de la Patagonia. Limpieza y distinción textil.', '/productos/fragancia-textil-frh.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil Kenzo', 'Brisa floral acuática fresca y zen. Vaporizá sobre prendas para disfrutar de una sensación revitalizante y placentera todo el día.', '/productos/fragancia-textil-kenzo.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil Angel', 'Acordes ambarados y dulces de alta persistencia para telas. Brinda un toque distintivo y envolvente a tus prendas favoritas.', '/productos/fragancia-textil-angel.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil One Million', 'Notas amaderadas y especiadas elegantes. Ideal para perfumar tapizados de automóviles, prendas de abrigo y ambientes masculinos.', '/productos/fragancia-textil-one-million.jpg', true),
-  ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Fragancia Textil Bulgary', 'Frescura cítrica y maderas nobles de alta gama. Perfume textil refinado y duradero para sábanas y toallas de calidad.', '/productos/fragancia-textil-bulgary.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Perfume Botánico Roll-On Rosa', 'Perfume oleoso concentrado con aplicador a bolilla. Notas románticas de rosa andina para aplicar en muñecas, cuello y escote.', '/productos/perfume-botanico-roll-on-rosa.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Perfume Botánico Roll-On Jazmín', 'Fragancia personal botánica intensa y sensual. Formato de bolsillo ideal para renovar el aroma en cualquier momento del día.', '/productos/perfume-botanico-roll-on-jazmin.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Perfume Botánico Roll-On Cítrico', 'Chispeante toque aromaterapéutico energizante. Aplicar en sienes y pulsos para disipar el cansancio y recargar vitalidad.', '/productos/perfume-botanico-roll-on-citrico.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Difusor Colgante para Auto Cítrico', 'Aromatizador artesanal en botellita de vidrio con tapón de madera difusora. Aceites cítricos puros para un viaje fresco y placentero.', '/productos/difusor-colgante-para-auto-citrico.jpg', true),
   ('9cddbc4a-d91a-42d0-9fff-d637235903b8', 'Difusor Colgante para Auto Lavanda Andina', 'Aromatizador para vehículo con aceite esencial de lavanda. Aporta serenidad al conducir y elimina olores encerrados de forma natural.', '/productos/difusor-colgante-para-auto-lavanda-andina.jpg', true),
   ('999ad3bf-376e-406c-943b-2902348e9e08', 'Shampoo Neutro con Hierbas Naturales', 'Fórmula artesanal enriquecida con Lavanda, Romero, Ruda, Clavo, Jengibre, Ortiga y Naranja. Limpieza profunda, nutre el cuero cabelludo y devuelve el brillo.', '/productos/shampoo-neutro-con-hierbas-naturales.jpg', true),
-  ('999ad3bf-376e-406c-943b-2902348e9e08', 'Shampoo Sólido de Ortiga y Romero', 'Barra botánica zero waste concentrada. Estimula la circulación del folículo piloso, combate la debilidad capilar y regula la oleosidad naturalmente.', '/productos/shampoo-solido-de-ortiga-y-romero.jpg', true),
   ('999ad3bf-376e-406c-943b-2902348e9e08', 'Serum Capilar Reparador de Puntas', 'Óleo vegetal puro enriquecido con Rosa Mosqueta y Almendras. Sella cutículas abiertas, controla el frizz y protege el cabello del viento y la sequedad.', '/productos/serum-capilar-reparador-de-puntas.jpg', true);
 
 -- Fin del script de carga

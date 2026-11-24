@@ -685,17 +685,6 @@ export const FALLBACK_PRODUCTS = [
   },
   {
     "id": "prod-local-60",
-    "name": "Tintura Madre Memo MIX",
-    "description": "Sinergia botánica nootrópica para estudiantes y profesionales. Estimula la concentración sostenida, la lucidez mental y la memoria de retención.",
-    "image_url": "/productos/tintura-madre-memo-mix.jpg",
-    "category_id": "5fcfa6d7-4f51-4b3f-921c-6fe48ee094be",
-    "categories": {
-      "name": "Tinturas Madre"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-61",
     "name": "Tintura Madre Rescate",
     "description": "Gotas de serenidad inmediata ante situaciones de angustia, susto, pánico o nerviosismo agudo. Restablece la paz mental y la estabilidad emocional.",
     "image_url": "/productos/tintura-madre-rescate.jpg",
@@ -706,7 +695,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-62",
+    "id": "prod-local-61",
     "name": "Tintura Madre Melena de León",
     "description": "Extracto del poderoso hongo adaptógeno Hericium erinaceus. Fomenta el factor de crecimiento nervioso (NGF), la plasticidad cerebral y la salud digestiva.",
     "image_url": "/productos/tintura-madre-melena-de-leon.jpg",
@@ -717,7 +706,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-63",
+    "id": "prod-local-62",
     "name": "Tintura Madre de Jarilla",
     "description": "Arbusto sagrado de la estepa andina. Potente depurativo orgánico, alivia afecciones respiratorias, reumatismo y purifica el torrente sanguíneo.",
     "image_url": "/productos/tintura-madre-de-jarilla.jpg",
@@ -728,7 +717,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-64",
+    "id": "prod-local-63",
     "name": "Tintura Madre de Llantén",
     "description": "Elaborada con hojas frescas de llantén patagónico. Descongestiva y suavizante de vías respiratorias, calma la tos seca y cicatriza mucosas.",
     "image_url": "/productos/tintura-madre-de-llanten.jpg",
@@ -739,7 +728,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-65",
+    "id": "prod-local-64",
     "name": "Tintura Madre de Melisa",
     "description": "Melisa cordillerana sedante suave y antiespasmódica. Alivia la irritabilidad nerviosa, palpitaciones por estrés y garantiza un descanso reparador.",
     "image_url": "/productos/tintura-madre-de-melisa.jpg",
@@ -750,7 +739,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-66",
+    "id": "prod-local-65",
     "name": "Sales de Baño: Rosa, Clavo de Olor e Hibiscus",
     "description": "Sales minerales patagónicas con flores de hibiscus, pétalos de rosa y clavo. Baño relajante para el corazón, suaviza la piel y brinda contención sensorial.",
     "image_url": "/productos/sales-de-bano-rosa-clavo-de-olor-e-hibiscus.jpg",
@@ -761,7 +750,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-67",
+    "id": "prod-local-66",
     "name": "Sales de Baño: Cítrica, Ruda y Diente de León",
     "description": "Mezcla depurativa y de limpieza energética. Ideal para pediluvios nocturnos que descargan la pesadez de los pies, estimulan la circulación y quitan tensiones.",
     "image_url": "/productos/sales-de-bano-citrica-ruda-y-diente-de-leon.jpg",
@@ -772,7 +761,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-68",
+    "id": "prod-local-67",
     "name": "Sales de Baño: Jazmín, Canela, Romero y Salvia",
     "description": "Sales reconfortantes y tonificantes. El romero y la salvia despejan el cuerpo cansado, mientras la canela y el jazmín aportan calidez vital.",
     "image_url": "/productos/sales-de-bano-jazmin-canela-romero-y-salvia.jpg",
@@ -783,7 +772,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-69",
+    "id": "prod-local-68",
     "name": "Sales de Baño: Sándalo, Manzanilla y Pasionaria",
     "description": "Sinergia calmante profunda para baños de inmersión antes de acostarse. Aquietan la mente inquieta y facilitan un sueño reparador continuo.",
     "image_url": "/productos/sales-de-bano-sandalo-manzanilla-y-pasionaria.jpg",
@@ -794,7 +783,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-70",
+    "id": "prod-local-69",
     "name": "Sales de Baño: Lavanda, Hipérico y Canela",
     "description": "Especialmente formuladas para aliviar dolores musculares y lumbares. Descontracturan la musculatura y disipan el cansancio tras un día agitado.",
     "image_url": "/productos/sales-de-bano-lavanda-hiperico-y-canela.jpg",
@@ -805,7 +794,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-71",
+    "id": "prod-local-70",
     "name": "Bruma Áurica de Jazmín",
     "description": "Hidrolato floral con notas puras de jazmín blanco. Despierta sensaciones de optimismo, calidez afectiva y armoniza el campo vibracional personal.",
     "image_url": "/productos/bruma-aurica-de-jazmin.jpg",
@@ -816,7 +805,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-72",
+    "id": "prod-local-71",
     "name": "Bruma Áurica Cítrica",
     "description": "Elixir energizante con aceites esenciales de naranja dulce, limón y bergamota. Despeja el cansancio mental, alegra los ambientes y renueva la energía.",
     "image_url": "/productos/bruma-aurica-citrica.jpg",
@@ -827,7 +816,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-73",
+    "id": "prod-local-72",
     "name": "Bruma Áurica de Lavanda",
     "description": "Destilado puro de lavandas andinas. Promueve paz mental instantánea. Ideal para vaporizar sobre almohadas, sábanas o en la habitación del bebé.",
     "image_url": "/productos/bruma-aurica-de-lavanda.jpg",
@@ -838,7 +827,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-74",
+    "id": "prod-local-73",
     "name": "Bruma Áurica de Bosque Andino",
     "description": "Notas de Ciprés cordillerano, Coihue y Pino Oregón. Brinda arraigo a la tierra, purifica el aire de espacios cerrados y conecta con la serenidad del bosque.",
     "image_url": "/productos/bruma-aurica-de-bosque-andino.jpg",
@@ -849,7 +838,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-75",
+    "id": "prod-local-74",
     "name": "Bruma Áurica de Rosas y Cedro",
     "description": "Sinergia armonizadora que conecta con el chakra cardíaco. Destilado de rosas de jardín patagónico con notas de cedro. Contención emocional y calidez.",
     "image_url": "/productos/bruma-aurica-de-rosas-y-cedro.jpg",
@@ -860,7 +849,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-76",
+    "id": "prod-local-75",
     "name": "Bruma Áurica de Lavanda y Salvia Blanca",
     "description": "Elixir purificador del campo áurico y limpieza espacial. Disipa energías densas en consultorios, hogares o espacios de meditación.",
     "image_url": "/productos/bruma-aurica-de-lavanda-y-salvia-blanca.jpg",
@@ -871,7 +860,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-77",
+    "id": "prod-local-76",
     "name": "Fragancia Ambiental Coco Tropical",
     "description": "Aroma dulce y envolvente con notas de coco natural. Transforma cualquier ambiente en un espacio cálido, exótico y relajado.",
     "image_url": "/productos/fragancia-ambiental-coco-tropical.jpg",
@@ -882,7 +871,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-78",
+    "id": "prod-local-77",
     "name": "Fragancia Ambiental Naranja Andina",
     "description": "Frescura cítrica dulce y chispeante. Aporta luminosidad y vitalidad al hogar o local comercial, eliminando olores persistentes.",
     "image_url": "/productos/fragancia-ambiental-naranja-andina.jpg",
@@ -893,7 +882,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-79",
+    "id": "prod-local-78",
     "name": "Fragancia Ambiental Limón Silvestre",
     "description": "Máxima sensación de frescura, limpieza y claridad mental. Aroma estimulante perfecto para cocinas, oficinas y áreas de trabajo.",
     "image_url": "/productos/fragancia-ambiental-limon-silvestre.jpg",
@@ -904,7 +893,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-80",
+    "id": "prod-local-79",
     "name": "Fragancia Ambiental Manzana Verde",
     "description": "Nota frutal crujiente, dulce y equilibrada. Despierta recuerdos acogedores y deja una estela aromática fresca y apetecible.",
     "image_url": "/productos/fragancia-ambiental-manzana-verde.jpg",
@@ -915,7 +904,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-81",
+    "id": "prod-local-80",
     "name": "Fragancia Ambiental Frutilla Silvestre",
     "description": "Dulzura frutal alegre y jovial inspirada en las bayas cordilleranas. Ambientación duradera para salas de estar y dormitorios.",
     "image_url": "/productos/fragancia-ambiental-frutilla-silvestre.jpg",
@@ -926,7 +915,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-82",
+    "id": "prod-local-81",
     "name": "Fragancia Ambiental Uva Dulce",
     "description": "Aroma frutal profundo y persistente con notas avainilladas y de uva madura. Crea un entorno distinguido y perfumado.",
     "image_url": "/productos/fragancia-ambiental-uva-dulce.jpg",
@@ -937,7 +926,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-83",
+    "id": "prod-local-82",
     "name": "Fragancia Ambiental Violeta",
     "description": "Delicada fragancia floral clásica. Suave, sutil y elegante, recomendada para ambientes de descanso o vestidores.",
     "image_url": "/productos/fragancia-ambiental-violeta.jpg",
@@ -948,7 +937,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-84",
+    "id": "prod-local-83",
     "name": "Fragancia Ambiental Pétalos de Rosa",
     "description": "El clásico y distinguido aroma floral de la rosa de verano. Llena los espacios de armonía, romanticismo y sosiego.",
     "image_url": "/productos/fragancia-ambiental-petalos-de-rosa.jpg",
@@ -959,7 +948,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-85",
+    "id": "prod-local-84",
     "name": "Fragancia Ambiental Bouquet Floral",
     "description": "Combinación equilibrada de flores andinas frescas. Una brisa primaveral permanente para aromatizar el hogar.",
     "image_url": "/productos/fragancia-ambiental-bouquet-floral.jpg",
@@ -970,7 +959,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-86",
+    "id": "prod-local-85",
     "name": "Fragancia Ambiental Sándalo Oriental",
     "description": "Madera sagrada aromática de notas cálidas y profundas. Fomenta la concentración, la meditación y el recogimiento espiritual.",
     "image_url": "/productos/fragancia-ambiental-sandalo-oriental.jpg",
@@ -981,7 +970,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-87",
+    "id": "prod-local-86",
     "name": "Fragancia Ambiental Almendra Dulce",
     "description": "Aroma cremoso, suave y reconfortante. Brinda sensación de protección y bienestar en espacios familiares.",
     "image_url": "/productos/fragancia-ambiental-almendra-dulce.jpg",
@@ -992,7 +981,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-88",
+    "id": "prod-local-87",
     "name": "Fragancia Ambiental Vainilla Colonial",
     "description": "Dulzura gourmand que reconforta y genera una atmósfera sumamente cálida y acogedora en cualquier rincón del hogar.",
     "image_url": "/productos/fragancia-ambiental-vainilla-colonial.jpg",
@@ -1003,95 +992,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-89",
-    "name": "Fragancia Textil 212",
-    "description": "Aroma sofisticado de inspiración urbana y cosmopolita. Ideal para vaporizar sobre cortinas, tapizados, ropa de cama y placard.",
-    "image_url": "/productos/fragancia-textil-212.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-90",
-    "name": "Fragancia Textil Flower",
-    "description": "Notas florales empolvadas, suaves y delicadas. Deja una estela fresca y distinguida en telas y prendas de vestir.",
-    "image_url": "/productos/fragancia-textil-flower.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-91",
-    "name": "Fragancia Textil Amor",
-    "description": "Esencia cautivante y romántica para textiles. Ideal para perfumar dormitorios, acolchados y sábanas de manera perdurable.",
-    "image_url": "/productos/fragancia-textil-amor.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-92",
-    "name": "Fragancia Textil FRH",
-    "description": "Sensación de pureza y frescura extrema de ropa recién secada al aire libre de la Patagonia. Limpieza y distinción textil.",
-    "image_url": "/productos/fragancia-textil-frh.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-93",
-    "name": "Fragancia Textil Kenzo",
-    "description": "Brisa floral acuática fresca y zen. Vaporizá sobre prendas para disfrutar de una sensación revitalizante y placentera todo el día.",
-    "image_url": "/productos/fragancia-textil-kenzo.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-94",
-    "name": "Fragancia Textil Angel",
-    "description": "Acordes ambarados y dulces de alta persistencia para telas. Brinda un toque distintivo y envolvente a tus prendas favoritas.",
-    "image_url": "/productos/fragancia-textil-angel.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-95",
-    "name": "Fragancia Textil One Million",
-    "description": "Notas amaderadas y especiadas elegantes. Ideal para perfumar tapizados de automóviles, prendas de abrigo y ambientes masculinos.",
-    "image_url": "/productos/fragancia-textil-one-million.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-96",
-    "name": "Fragancia Textil Bulgary",
-    "description": "Frescura cítrica y maderas nobles de alta gama. Perfume textil refinado y duradero para sábanas y toallas de calidad.",
-    "image_url": "/productos/fragancia-textil-bulgary.jpg",
-    "category_id": "9cddbc4a-d91a-42d0-9fff-d637235903b8",
-    "categories": {
-      "name": "Fragancias"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-97",
+    "id": "prod-local-88",
     "name": "Perfume Botánico Roll-On Rosa",
     "description": "Perfume oleoso concentrado con aplicador a bolilla. Notas románticas de rosa andina para aplicar en muñecas, cuello y escote.",
     "image_url": "/productos/perfume-botanico-roll-on-rosa.jpg",
@@ -1102,7 +1003,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-98",
+    "id": "prod-local-89",
     "name": "Perfume Botánico Roll-On Jazmín",
     "description": "Fragancia personal botánica intensa y sensual. Formato de bolsillo ideal para renovar el aroma en cualquier momento del día.",
     "image_url": "/productos/perfume-botanico-roll-on-jazmin.jpg",
@@ -1113,7 +1014,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-99",
+    "id": "prod-local-90",
     "name": "Perfume Botánico Roll-On Cítrico",
     "description": "Chispeante toque aromaterapéutico energizante. Aplicar en sienes y pulsos para disipar el cansancio y recargar vitalidad.",
     "image_url": "/productos/perfume-botanico-roll-on-citrico.jpg",
@@ -1124,7 +1025,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-100",
+    "id": "prod-local-91",
     "name": "Difusor Colgante para Auto Cítrico",
     "description": "Aromatizador artesanal en botellita de vidrio con tapón de madera difusora. Aceites cítricos puros para un viaje fresco y placentero.",
     "image_url": "/productos/difusor-colgante-para-auto-citrico.jpg",
@@ -1135,7 +1036,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-101",
+    "id": "prod-local-92",
     "name": "Difusor Colgante para Auto Lavanda Andina",
     "description": "Aromatizador para vehículo con aceite esencial de lavanda. Aporta serenidad al conducir y elimina olores encerrados de forma natural.",
     "image_url": "/productos/difusor-colgante-para-auto-lavanda-andina.jpg",
@@ -1146,7 +1047,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-102",
+    "id": "prod-local-93",
     "name": "Shampoo Neutro con Hierbas Naturales",
     "description": "Fórmula artesanal enriquecida con Lavanda, Romero, Ruda, Clavo, Jengibre, Ortiga y Naranja. Limpieza profunda, nutre el cuero cabelludo y devuelve el brillo.",
     "image_url": "/productos/shampoo-neutro-con-hierbas-naturales.jpg",
@@ -1157,18 +1058,7 @@ export const FALLBACK_PRODUCTS = [
     "is_available": true
   },
   {
-    "id": "prod-local-103",
-    "name": "Shampoo Sólido de Ortiga y Romero",
-    "description": "Barra botánica zero waste concentrada. Estimula la circulación del folículo piloso, combate la debilidad capilar y regula la oleosidad naturalmente.",
-    "image_url": "/productos/shampoo-solido-de-ortiga-y-romero.jpg",
-    "category_id": "999ad3bf-376e-406c-943b-2902348e9e08",
-    "categories": {
-      "name": "Cuidado Capilar"
-    },
-    "is_available": true
-  },
-  {
-    "id": "prod-local-104",
+    "id": "prod-local-94",
     "name": "Serum Capilar Reparador de Puntas",
     "description": "Óleo vegetal puro enriquecido con Rosa Mosqueta y Almendras. Sella cutículas abiertas, controla el frizz y protege el cabello del viento y la sequedad.",
     "image_url": "/productos/serum-capilar-reparador-de-puntas.jpg",

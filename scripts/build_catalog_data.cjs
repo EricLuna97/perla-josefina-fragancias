@@ -402,12 +402,6 @@ const PRODUCTS = [
     description: 'Extracto hidroalcohólico concentrado de cúrcuma pura. Hepatoprotectora, antiinflamatoria articular y protectora de la salud cardiovascular.'
   },
   {
-    name: 'Tintura Madre Memo MIX',
-    category: 'TINTURAS',
-    image_url: '/productos/tintura-madre-memo-mix.jpg',
-    description: 'Sinergia botánica nootrópica para estudiantes y profesionales. Estimula la concentración sostenida, la lucidez mental y la memoria de retención.'
-  },
-  {
     name: 'Tintura Madre Rescate',
     category: 'TINTURAS',
     image_url: '/productos/tintura-madre-rescate.jpg',
@@ -584,54 +578,6 @@ const PRODUCTS = [
     description: 'Dulzura gourmand que reconforta y genera una atmósfera sumamente cálida y acogedora en cualquier rincón del hogar.'
   },
   {
-    name: 'Fragancia Textil 212',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-212.jpg',
-    description: 'Aroma sofisticado de inspiración urbana y cosmopolita. Ideal para vaporizar sobre cortinas, tapizados, ropa de cama y placard.'
-  },
-  {
-    name: 'Fragancia Textil Flower',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-flower.jpg',
-    description: 'Notas florales empolvadas, suaves y delicadas. Deja una estela fresca y distinguida en telas y prendas de vestir.'
-  },
-  {
-    name: 'Fragancia Textil Amor',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-amor.jpg',
-    description: 'Esencia cautivante y romántica para textiles. Ideal para perfumar dormitorios, acolchados y sábanas de manera perdurable.'
-  },
-  {
-    name: 'Fragancia Textil FRH',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-frh.jpg',
-    description: 'Sensación de pureza y frescura extrema de ropa recién secada al aire libre de la Patagonia. Limpieza y distinción textil.'
-  },
-  {
-    name: 'Fragancia Textil Kenzo',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-kenzo.jpg',
-    description: 'Brisa floral acuática fresca y zen. Vaporizá sobre prendas para disfrutar de una sensación revitalizante y placentera todo el día.'
-  },
-  {
-    name: 'Fragancia Textil Angel',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-angel.jpg',
-    description: 'Acordes ambarados y dulces de alta persistencia para telas. Brinda un toque distintivo y envolvente a tus prendas favoritas.'
-  },
-  {
-    name: 'Fragancia Textil One Million',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-one-million.jpg',
-    description: 'Notas amaderadas y especiadas elegantes. Ideal para perfumar tapizados de automóviles, prendas de abrigo y ambientes masculinos.'
-  },
-  {
-    name: 'Fragancia Textil Bulgary',
-    category: 'FRAGANCIAS',
-    image_url: '/productos/fragancia-textil-bulgary.jpg',
-    description: 'Frescura cítrica y maderas nobles de alta gama. Perfume textil refinado y duradero para sábanas y toallas de calidad.'
-  },
-  {
     name: 'Perfume Botánico Roll-On Rosa',
     category: 'FRAGANCIAS',
     image_url: '/productos/perfume-botanico-roll-on-rosa.jpg',
@@ -672,12 +618,6 @@ const PRODUCTS = [
     description: 'Fórmula artesanal enriquecida con Lavanda, Romero, Ruda, Clavo, Jengibre, Ortiga y Naranja. Limpieza profunda, nutre el cuero cabelludo y devuelve el brillo.'
   },
   {
-    name: 'Shampoo Sólido de Ortiga y Romero',
-    category: 'CAPILAR',
-    image_url: '/productos/shampoo-solido-de-ortiga-y-romero.jpg',
-    description: 'Barra botánica zero waste concentrada. Estimula la circulación del folículo piloso, combate la debilidad capilar y regula la oleosidad naturalmente.'
-  },
-  {
     name: 'Serum Capilar Reparador de Puntas',
     category: 'CAPILAR',
     image_url: '/productos/serum-capilar-reparador-de-puntas.jpg',
@@ -687,7 +627,7 @@ const PRODUCTS = [
 
 // Generar SQL
 let sql = `-- ==============================================================================
--- CATÁLOGO COMPLETO JOSEFINA FRAGANCIAS NATURALES (104 PRODUCTOS)
+-- CATÁLOGO COMPLETO JOSEFINA FRAGANCIAS NATURALES (94 PRODUCTOS)
 -- ==============================================================================
 -- Ejecutar en Supabase Dashboard > SQL Editor > Run
 -- Mapea directamente a los UUIDs existentes de las categorías en producción.
@@ -696,7 +636,7 @@ let sql = `-- ==================================================================
 -- 1. Eliminar productos previos para evitar duplicaciones
 DELETE FROM public.products;
 
--- 2. Insertar los 104 productos oficiales desduplicados con sus imágenes de estudio
+-- 2. Insertar los 94 productos oficiales desduplicados con sus imágenes de estudio
 INSERT INTO public.products (category_id, name, description, image_url, is_available)
 VALUES
 `;
