@@ -23,15 +23,15 @@ export default function Hero() {
           />
         </div>
 
-        <span className="text-xs font-semibold tracking-widest text-rose-600 uppercase">
+        <span className="text-sm sm:text-base font-semibold tracking-widest text-rose-600 uppercase">
           Comarca Andina · Patagonia Argentina
         </span>
 
-        <h1 className="mt-3 text-3xl sm:text-5xl font-serif text-stone-900 tracking-tight font-normal">
+        <h1 className="mt-3 text-3xl sm:text-5xl font-serif text-[#BA317F] tracking-tight font-medium">
           Josefina Fragancias Naturales
         </h1>
 
-        <p className="mt-4 text-base sm:text-lg text-stone-700 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-4 text-lg sm:text-xl text-stone-700 max-w-2xl mx-auto leading-relaxed">
           Desde la naturaleza, para tu bienestar.
         </p>
 

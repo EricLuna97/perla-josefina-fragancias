@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { supabase, isSupabaseConfigured } from './lib/supabase';
 import { STORE_CONFIG } from './config';
-import { MessageCircle, Search, Loader2, RotateCcw, AlertCircle } from 'lucide-react';
+import { MessageCircle, Search, Loader2, RotateCcw, AlertCircle, ArrowUp } from 'lucide-react';
 import Hero from './components/Hero';
 import ProductDetailModal from './components/ProductDetailModal';
 import { FALLBACK_PRODUCTS, FALLBACK_CATEGORIES } from './data/fallbackProducts';
@@ -15,8 +15,30 @@ export default function App() {
   const [error, setError] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [reloadKey, setReloadKey] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   const catalogSectionRef = useRef(null);
+
+  // Escuchar el scroll para mostrar el botón de volver arriba
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   // 1. Cargar categorías y productos desde Supabase (con respaldo resiliente del catálogo completo)
   useEffect(() => {
@@ -333,6 +355,19 @@ export default function App() {
         onClose={() => setSelectedProduct(null)}
         whatsappNumber={STORE_CONFIG.whatsappNumber}
       />
+
+      {/* BOTÓN FLOTANTE PARA VOLVER ARRIBA */}
+      <button
+        onClick={scrollToTop}
+        aria-label="Volver arriba"
+        className={`fixed bottom-20 right-4 sm:right-6 z-40 p-3 rounded-full bg-white/95 hover:bg-white text-rose-600 hover:text-rose-700 shadow-md hover:shadow-lg border border-rose-200/80 backdrop-blur-xs transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer group ${
+          showScrollTop
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 translate-y-4 pointer-events-none'
+        }`}
+      >
+        <ArrowUp className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
+      </button>
 
       {/* FOOTER INFERIOR FLOTANTE CON ENLACES */}
       <footer className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stone-200/80 pt-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] px-4 shadow-sm">
